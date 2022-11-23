@@ -449,8 +449,8 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="subscribe" >        
+        </div>
+        <div class="subscribe" >        
         <p class="footer-title" for="email">підпишіться на розсилку</p>
           <form  class="form-footer">
             <input class="input-footer" type="email" name="email" placeholder="E-mail" id="email">
@@ -472,11 +472,48 @@
               <use href="./images/icons.svg#icon-modal-close"></use>
             </svg>
           </button>
-          <strong>Залиште свої дані, ми вам зателефонуємо</strong>
+          <form class="modal-form" name="modal-form">
+            <div class="modal-form-group" role="group"    aria-labelledby="modal-form-title">
+              <strong class="modal-form-title" id="modal-form-title">Залиште свої дані, ми вам зателефонуємо</strong>
+              <label class="modal-form-label" for="name" >Ім'я</label>  
+              <div class="modal-form-wrapper">
+                <input class="modal-form-input" name='user-name' id='name' type="text" minlength="5">
+                <svg class="modal-form-icon">
+                  <use href="images/icons.svg#icon-user-name"></use>
+                </svg>
+              </div>
+              <label class="modal-form-label" for="phone" >Телефон</label>  
+              <div class="modal-form-wrapper">
+                <input class="modal-form-input" name='user-phone' id='phone' type="tel">
+                <svg class="modal-form-icon">
+                  <use href="images/icons.svg#icon-user-phone"></use>
+                </svg>
+              </div>
 
-          </div>
+              <label class="modal-form-label" for="email">Пошта</label>  
+              <div class="modal-form-wrapper">
+                <input class="modal-form-input" name='user-email' id='email' type="email">
+                <svg class="modal-form-icon">
+                  <use href="images/icons.svg#icon-user-email"></use>
+                </svg>
+              </div>
+
+              <label class="modal-form-label" for="message" >Коментар</label>  
+              <div class="modal-form-wrapper">
+                <textarea class="modal-form-message" name='user-message' id='message' rows="6" placeholder="Введіть текст"></textarea>
+              </div>
+            </div>
+            <div class="modal-form-agreement" role="group">  
+              <input class='modal-form-checkbox' type="checkbox" name="user-agreement" id="user-agreement">
+              <label class='modal-form-checkbox-desc' for="user-agreement">
+                Погоджуюся з розсилкою та приймаю  <a class='modal-form-link' href="">Умови договору</a> 
+              </label>
+            </div>
+            <button class='button blue-button modal-form-button' type="submit">Відправити</button>
+          </form>
         </div>
       </div>
+  
 
       <script src="./js/modal.js"></script>
   </body>
