@@ -312,6 +312,10 @@ img {
   position: relative;
 }
 
+.modal-form-wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .modal-form-label {
   display: block;
   font-size: 12px;
@@ -324,7 +328,7 @@ img {
   height: 40px;
   padding-left: 38px;
   padding-right: 10px;
-  margin-bottom: 10px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: unset;
@@ -334,7 +338,7 @@ img {
 
 .modal-form-message {
   display: block;
-  padding: 10px;
+  padding: 16px;
   resize: none;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -354,7 +358,8 @@ img {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 10px;
 
   transition: fill 250ms var(--trans-func);
@@ -748,17 +753,13 @@ img {
 
 /* footer form */
 
-.subscribe {
-  width: 570px;
-}
-
 .form-footer {
   display: flex;
   gap: 12px;
 }
 
 .input-footer {
-  flex: 1;
+  width: 358px;
   padding-inline: 16px;
   background-color: transparent;
   border-radius: 4px;
